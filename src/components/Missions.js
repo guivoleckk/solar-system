@@ -8,8 +8,10 @@ class Missions extends Component {
     return (
       <>
         <div data-testid="missions"> </div>
+        <div className="title">
         <Title headline="Missões" />
-        <section>
+        </div>
+        <section className="mission-cards">
           {
             missions.map((mission) => {
               const { name, year, country, destination } = mission;
